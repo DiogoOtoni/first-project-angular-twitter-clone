@@ -1,11 +1,7 @@
 <div class="w-[650px] bg-white rounded-lg shadow p-6 mb-8">
 	<div class="flex justify-center w-full">
 		<!-- avatar circle -->
-		<div class="flex-shrink-0 mr-5">
-			<div class="cursor-pointer font-bold w-12 h-12 bg-gray-300 flex items-center justify-center rounded-full">
-				F
-			</div>
-		</div>
+		<app-avatar />
 
 		<!-- formulario -->
 		<div class="flex-1">
@@ -14,7 +10,7 @@
 						parenteses para associar função
 						colchetes para associar variaveis
 			 -->
-			<textarea [(ngModel)]="tweetMessage" (input)="changeTweet()" [maxlength]="tweetMaxLength" cols="30" rows="3" class="mb-2 bg-gray-200 focus:outline-none focus:shadow-outline focus:bg-gray-100 border border-transparent rounded-lg py-2 px-4 block w-full appearance-none resize-none font-light" placeholder="What's happening?"></textarea>
+			<textarea (keyup.enter)="sendTweet()" [(ngModel)]="tweetMessage" (input)="changeTweet()" [maxlength]="tweetMaxLength" cols="30" rows="3" class="mb-2 bg-gray-200 focus:outline-none focus:shadow-outline focus:bg-gray-100 border border-transparent rounded-lg py-2 px-4 block w-full appearance-none resize-none font-light" placeholder="What's happening?"></textarea>
 			<!-- divider line -->
 			<div class="w-auto border rounded-lg"></div>
 			<!-- interactive -->

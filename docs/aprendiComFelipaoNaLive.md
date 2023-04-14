@@ -1,0 +1,11 @@
+# Angular Roadmap aprendido na live
+---
+- componentizar o front-end
+- como funciona um componente
+- estilizar componentes com tailwind
+- estruturar um projeto angular com boas praticas
+- pra que serve os arquivos dentro e fora da src
+- criar componentes dinamicos que recebem parametros
+- trabalhar com services (bem legal), terceiraizar açoes entre componentes
+- directives Angular para trabalhar com lógica no html (*ngxxxx)
+---
